@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="120dp"
+        android:id="@+id/img"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imga"
+            android:contentDescription="product image"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_launcher_background"/>
+    </FrameLayout>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:textStyle="bold"
+    android:paddingTop="10dp"
+    android:id="@+id/productName"
+    android:layout_alignTop="@+id/img"
+    android:layout_toRightOf="@id/img"
+    android:textColor="@android:color/black"
+    tools:text="Product Name/ title"
+    android:textSize="18sp"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_alignBottom="@id/img"
+        android:layout_toRightOf="@id/img"
+        android:layout_alignLeft="@+id/location"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="#85,000"
+
+        android:id="@+id/price"
+        android:textSize="17sp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgg"
+        android:tint="@android:color/darker_gray"
+        android:layout_alignBottom="@id/location"
+        android:layout_toRightOf="@id/img"
+        android:src="@drawable/ic_location_on_black_24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/imgg"
+        tools:text="location"
+        android:textSize="15sp"
+        android:id="@+id/location"
+        android:layout_above="@id/price"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/img"
+        android:id="@+id/v"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/v"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/chat"
+                android:layout_height="40dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@android:color/darker_gray"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_email_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Chat"
+                    android:textSize="17sp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/img"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/holo_blue_dark" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/num"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:tint="@android:color/darker_gray"
+                android:src="@drawable/ic_phone_black_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Show phone"
+                android:textSize="17sp"
+                android:id="@+id/pNum"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/holo_green_dark" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+</android.support.v7.widget.CardView>

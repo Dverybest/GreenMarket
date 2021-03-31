@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="charlesbest.com.greenmarket.PostActivity"
+    tools:showIn="@layout/activity_post">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:id="@+id/pImage"
+                    android:src="@drawable/apple"
+                    android:layout_marginLeft="5dp"
+                    android:padding="5dp"
+                    android:contentDescription="product Image"
+                    android:layout_weight="4"
+                    android:background="@drawable/boarder"
+                    android:layout_height="480px"/>
+
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/upload"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/clearbg"
+                android:textColor="#000000"
+                android:text="Upload Image"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorPrimary"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:tint="@color/blue"
+                    android:src="@drawable/ic_label_black_24dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/catText"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:text="Category : "/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/pCategory"
+                        android:gravity="center"
+                        android:layout_height="35dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:tint="@color/blue"
+                    android:src="@drawable/ic_label_black_24dp"
+                    android:layout_height="wrap_content" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:textColorHint="#000000"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/pName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Product Name"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:tint="@color/blue"
+                    android:src="@drawable/ic_label_black_24dp"
+                    android:layout_height="wrap_content" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:textColorHint="#000000"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/pDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Product Description"
+                        android:textColor="#000000"
+                        android:inputType="text|textLongMessage"
+                        android:maxLines="5"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/ic_label_black_24dp"
+                    android:layout_height="wrap_content" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:textColorHint="#000000"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/pLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Location"
+                        android:textColor="#000000"
+                        android:inputType="text|textLongMessage"
+                        android:maxLines="2"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/ic_label_black_24dp"
+                    android:layout_height="wrap_content" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:textColorHint="#000000"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/pPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Price (e.g 5000)"
+                        android:textColor="#000000"
+                        android:inputType="numberDecimal"
+                        android:maxLines="1"
+                        android:textSize="16sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "714283513509",
+    "firebase_url": "https://green-market-dea88.firebaseio.com",
+    "project_id": "green-market-dea88",
+    "storage_bucket": "green-market-dea88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:714283513509:android:b911b6c3ee8c440c",
+        "android_client_info": {
+          "package_name": "charlesbest.com.greenmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "714283513509-7on09v0lpnb4j2rqtlhs9l765u0gt23d.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "714283513509-7on09v0lpnb4j2rqtlhs9l765u0gt23d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAmQu_1hSiK65BPLQucX6048ky6ehejPE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
